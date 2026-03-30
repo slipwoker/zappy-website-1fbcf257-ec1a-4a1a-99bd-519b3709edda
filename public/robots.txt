@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://motiwinkler.zappy5.app/sitemap.xml
+Sitemap: https://vinkler-fin.co.il/sitemap.xml

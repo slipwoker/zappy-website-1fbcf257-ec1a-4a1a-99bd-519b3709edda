@@ -1,65 +1,47 @@
-# מוטי וינקלר — Generative Engine Optimization Map
-
-> Moti Winkler is a seasoned financial expert with over 20 years of experience in capital markets, specializing in investments, insurance, and pension planning. He offers deep professional expertise and a trusted advisory approach to help clients navigate complex financial decisions. The brand conveys authority, reliability, and long-term financial security.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### בית
-https://motiwinkler.zappy5.app
+https://vinkler-fin.co.il
 מוטי וינקלר, מומחה פיננסי עם למעלה מ-20 שנות ניסיון בשוק ההון, ביטוח ותכנון פנסיה. קבל ייעוץ מקצועי שישנה את עתידך הכלכלי — פנה אלינו היום.
 
 ### שירותים
-https://motiwinkler.zappy5.app/services
+https://vinkler-fin.co.il/services
 גלה את מגוון השירותים הפיננסיים המקיפים: ביטוח מותאם אישית, ניהול השקעות בשוק ההון, וייעוץ פנסיה לגמלאים. הכסף שלך בידיים הנכונות — בדוק עכשיו.
 
 ### אודות
-https://motiwinkler.zappy5.app/about
+https://vinkler-fin.co.il/about
 היכר את מוטי וינקלר, יועץ פיננסי מוביל המתמחה בביטוח, שוק ההון ותכנון פיננסי למשפחות צעירות וגמלאים. ניסיון עשיר, גישה אישית, ותוצאות שמדברות בעד עצמן.
 
 ### צור קשר
-https://motiwinkler.zappy5.app/contact
+https://vinkler-fin.co.il/contact
 רוצה ייעוץ פיננסי אמין בתחומי ביטוח, פנסיה והשקעות? צור קשר עם מוטי וינקלר עכשיו וקבל את הכוונה המקצועית שתוביל אותך לביטחון פיננסי לטווח ארוך.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://motiwinkler.zappy5.app/privacy
+https://vinkler-fin.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://motiwinkler.zappy5.app/terms
+https://vinkler-fin.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://motiwinkler.zappy5.app/accessibility
+https://vinkler-fin.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About מוטי וינקלר
-Moti Winkler is a seasoned financial expert with over 20 years of experience in capital markets, specializing in investments, insurance, and pension planning. He offers deep professional expertise and a trusted advisory approach to help clients navigate complex financial decisions. The brand conveys authority, reliability, and long-term financial security.
-
-## Services/Products
-- השקעות
-- ביטוח
-- פנסיה
-- שוק ההון
-
-## Target Audience
-- משפחות צעירות בתכנון פיננסי
-- גמלאים המחפשים ביטוח
-- מנהלים בכירים בחברות
-
-## Industry
-פיננסים, השקעות, ביטוח, פנסיה
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://motiwinkler.zappy5.app/sitemap.xml
-- **Robots.txt**: https://motiwinkler.zappy5.app/robots.txt
+- **Sitemap**: https://vinkler-fin.co.il/sitemap.xml
+- **Robots.txt**: https://vinkler-fin.co.il/robots.txt
