@@ -2596,10 +2596,11 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 /* ── MOBILE ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .index-hero-section {
-    min-height: 100svh;
-    align-items: flex-end;
-    padding-bottom: 90px;
-  }
+  min-height: 100svh;
+  align-items: flex-end;
+  padding-bottom: 90px;
+  background-position: center center !important;
+}
 
   .index-hero-section .index-hero-scrim {
     background-image:
@@ -8258,6 +8259,12 @@ body.accessibility-widget-visible ._access-menu {
 @media (max-width: 768px) {
 .index-hero-section {
   background-position: 75% center !important;
+}
+}
+
+@media (max-width: 768px) {
+.index-hero-section {
+  background-position: center center !important;
 }
 }
 
