@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '050-6700030';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -783,27 +783,27 @@
 </script>
   
   <main>
-    <section class="services-intro-section" data-layout-spec="שירותים-intro" dir="rtl">
+    <section class="services-intro-section" data-layout-spec="שירותים-intro" dir="rtl" id="zappy-section-0">
   <div class="services-intro-container">
     <div class="services-intro-content">
       <div class="services-intro-eyebrow">
         <span class="services-intro-eyebrow-line"></span>
         <span class="services-intro-eyebrow-text">השירותים שלנו</span>
       </div>
-      <h1 class="services-intro-heading">ליווי פיננסי מקיף —&nbsp;<br>כל ההחלטות, מקום אחד</h1>
+      <h1 class="services-intro-heading" >ליווי פיננסי מקיף —&nbsp;<br>כל ההחלטות, מקום אחד</h1>
       <p class="services-intro-lead">כשמדובר בעתיד הפיננסי שלכם, כל תחום משפיע על השני. השקעה שלא מתואמת עם תוכנית הפנסיה, או ביטוח שאינו מותאם לתמונה הכוללת — עלולים לפגוע בתוצאה הסופית. מוטי וינקלר מציע גישה אינטגרטיבית: חשיבה כוללת בין השקעות, ביטוח ופנסיה, כדי שכל החלטה תשרת את המטרה הגדולה.</p>
       <p class="services-intro-body">עם למעלה מ-20 שנות ניסיון בשוק ההון, מוטי מביא מומחיות עמוקה ונגישה לכל לקוח — בין אם אתם בתחילת הדרך, בשיא הקריירה, או מתכננים גמלאות. הייעוץ הפיננסי כאן אינו חד-פעמי; הוא מלווה אתכם לאורך כל שלבי החיים.</p>
       <div class="services-intro-pillars">
-        <div class="services-intro-pillar">
+        <div class="services-intro-pillar zappy-grid-item-nested-grid" data-grid-item-index="0">
           <div class="services-intro-pillar-icon">
             <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
           </div>
           <div class="services-intro-pillar-text">
-            <h3>השקעות</h3>
+            <h3 >השקעות וחיסכון</h3>
             <p>ניהול תיק מותאם אישית לרמת הסיכון ולמטרות שלכם</p>
           </div>
         </div>
-        <div class="services-intro-pillar">
+        <div class="services-intro-pillar zappy-grid-item-nested-grid" data-grid-item-index="1">
           <div class="services-intro-pillar-icon">
             <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           </div>
@@ -812,7 +812,7 @@
             <p>כיסוי מקיף המותאם לצרכים האמיתיים שלכם ושל משפחתכם</p>
           </div>
         </div>
-        <div class="services-intro-pillar">
+        <div class="services-intro-pillar zappy-grid-item-nested-grid" data-grid-item-index="2">
           <div class="services-intro-pillar-icon">
             <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
           </div>
@@ -825,7 +825,7 @@
     </div>
     <div class="services-intro-graphic" aria-hidden="true">
       <div class="services-intro-graphic-inner">
-        <svg class="services-intro-chart-svg" aria-hidden="true" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="services-intro-chart-svg" data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- Background grid lines -->
           <line x1="0" y1="340" x2="320" y2="340" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
           <line x1="0" y1="280" x2="320" y2="280" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
@@ -865,7 +865,7 @@
   <!-- Bottom divider: stepped linear transition with royal-blue accent line -->
   <div class="services-intro-divider-wrapper">
     <div class="services-intro-accent-divider-line"></div>
-    <svg aria-hidden="true" viewBox="0 0 1200 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,48 L0,24 L300,24 L300,12 L600,12 L600,0 L900,0 L900,12 L1200,12 L1200,48 Z" fill="#FFFFFF"></path>
     </svg>
   </div>
