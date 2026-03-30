@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '050-6700030';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -783,7 +783,7 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(10, 20, 80, 0.2), rgba(10, 20, 80, 0.2)), url(&amp;quot;assets/business-general-hero-upload-1774791024606.webp&amp;quot;); background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(10, 20, 80, 0.2); --zappy-bg-image: url(&amp;quot;assets/business-general-hero-upload-1774791024606.webp&amp;quot;)" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1774791024606.webp" data-zappy-bg-overlay-color="#0a1450" data-zappy-bg-overlay-opacity="20" data-zappy-bg-video-type="" data-zappy-bg-video-url="">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(10, 20, 80, 0.2), rgba(10, 20, 80, 0.2)), url(&quot;assets/business-general-hero-upload-1774791024606.webp&quot;); background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(10, 20, 80, 0.2); --zappy-bg-image: url(&quot;assets/business-general-hero-upload-1774791024606.webp&quot;)" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1774791024606.webp" data-zappy-bg-overlay-color="#0a1450" data-zappy-bg-overlay-opacity="20" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-content-align="top-right"><style data-zappy-align-style="true">#zappy-section-0 > [data-zappy-align-target] { margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: 0 !important; align-items: flex-start !important; justify-content: flex-start !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: 0 !important; justify-content: flex-start !important; padding-top: 0 !important; padding-bottom: 0 !important; }  @media (max-width: 768px) { #zappy-section-0 > [data-zappy-align-target] { align-items: center !important; justify-content: flex-start !important; margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: auto !important; } }</style>
   <!-- Background Image -->
   <div class="index-hero-bg" style="display: none" data-zappy-original-bg="hidden">
     <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Professional studio portrait of Moti Winkler, a distinguished Israeli financial advisor in his 50s, wearing a dark navy suit and tie, confident and approachable expression, photographed against a soft light gray textured backdrop. The composition is weighted toward the left side of the frame (leaving the right side open for text overlay). Cinematic lighting with subtle depth of field. High-end corporate portrait photography style, warm yet authoritative mood." width="1200" height="700" src="/assets/site-index-hero-image-1.webp" alt="מוטי וינקלר – מומחה פיננסי ויועץ השקעות בכיר" class="index-hero-img zappy-editable-image" data-hero-background="true" data-element-type="image" data-element-id="img-1774776364526-ps16ivnzc">
@@ -793,10 +793,10 @@
   <div class="index-hero-scrim" aria-hidden="true" style="display: none" data-zappy-original-bg="hidden"></div>
 
   <!-- Text Overlay Group -->
-  <div class="index-hero-content-wrapper">
+  <div class="index-hero-content-wrapper" data-zappy-align-target="true">
     <div class="index-hero-content">
-      <p><span class="index-hero-eyebrow" >מעל 20 שנות ניסיון בשוק ההון</span>
-      </p><h1 class="index-hero-h1" >מוטי וינקלר –<br><br>ביטוח, השקעות ופיננסים<br><br></h1>
+      <p ><span class="index-hero-eyebrow" >מעל 20 שנות ניסיון בשוק ההון</span>
+      </p><h1 class="index-hero-h1" >מוטי וינקלר –<br>ביטוח, השקעות ופיננסים<br><br></h1>
       
       <div class="index-hero-ctas">
         <a href="/contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1774776364522-dniionx3v" data-native-element="true" style="outline: none;">לתיאום פגישה</a>
@@ -915,7 +915,7 @@
 
 
 
-<br><br>אפשרויות ההשקעה מגוונות כגון - פוליסת חיסכון, קופת גמל לפי תיקון 190,&amp;nbsp; תיק השקעות מנוהל והשקעות אלטרנטיביות.</p>
+<br><br>אפשרויות ההשקעה מגוונות כגון - פוליסת חיסכון, קופת גמל לפי תיקון 190,&nbsp; תיק השקעות מנוהל והשקעות אלטרנטיביות.</p>
         </div>
         <div class="index-services-outcome">
           <p><span class="index-services-outcome-label">התוצאה עבורך</span>
@@ -964,7 +964,7 @@
 
 
 
-<br><br>מגוון מוצרים - ביטוח חיים, כתב שירות רפואי, ביטוח בריאות, ביטוח סיעודי,&amp;nbsp; ביטוח מחלות קשות, תאונות אישיות, ביטוח נסיעות לחו"ל ועוד.<br><br><br><br></p>
+<br><br>מגוון מוצרים - ביטוח חיים, כתב שירות רפואי, ביטוח בריאות, ביטוח סיעודי,&nbsp; ביטוח מחלות קשות, תאונות אישיות, ביטוח נסיעות לחו"ל ועוד.<br><br><br><br></p>
         </div>
         <div class="index-services-outcome">
           <p><span class="index-services-outcome-label">התוצאה עבורך</span>
@@ -1032,14 +1032,14 @@
           <p><span class="index-services-outcome-label">התוצאה עבורך</span>
           </p><p class="index-services-outcome-text">פרישה מכובדת עם הכנסה יציבה ומתוכננת היטב</p>
         </div>
-      </article><div class="zappy-inserted-element" id="zappy-element-1774854517747-30vrgmer5" data-element-id="zappy-element-1774854517747-30vrgmer5" data-element-type="paragraph" style="width: 100%;"></div>
+      </article>
 
     </div>
     <!-- End Service Rows -->
 
     <!-- CTA -->
     <div class="index-services-cta" >
-      <a href="/contact" class="btn-primary index-services-btn" data-element-type="button" data-element-id="btn-1774801595200-icmwuq8ye" data-native-element="true" style="outline: none;">קבע פגישה&amp;nbsp;</a>
+      <a href="/contact" class="btn-primary index-services-btn" data-element-type="button" data-element-id="btn-1774801595200-icmwuq8ye" data-native-element="true" style="outline: none;">קבע פגישה&nbsp;</a>
     </div>
 
   </div>
