@@ -409,12 +409,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -427,7 +427,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -563,7 +563,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -754,7 +754,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '050-6700030';
         
@@ -771,7 +771,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -825,7 +825,7 @@
 
 
 
-  <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(10, 20, 80, 0.2), rgba(10, 20, 80, 0.2)), url(&quot;assets/business-general-hero-upload-1774791024606.webp&quot;); background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(10, 20, 80, 0.2); --zappy-bg-image: url(&quot;assets/business-general-hero-upload-1774791024606.webp&quot;)" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1774791024606.webp" data-zappy-bg-overlay-color="#0a1450" data-zappy-bg-overlay-opacity="20" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-content-align="top-right"><style data-zappy-align-style="true">#zappy-section-0 &gt; [data-zappy-align-target] { margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: 0 !important; align-items: flex-start !important; justify-content: flex-start !important; } #zappy-section-0 &gt; [data-zappy-align-target] &gt; * { margin-left: auto !important; margin-right: 0 !important; justify-content: flex-start !important; padding-top: 0 !important; padding-bottom: 0 !important; }  @media (max-width: 768px) { #zappy-section-0 &gt; [data-zappy-align-target] { align-items: center !important; justify-content: flex-start !important; margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-0 &gt; [data-zappy-align-target] &gt; * { margin-left: auto !important; margin-right: auto !important; } }</style>
+  <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(10, 20, 80, 0.2), rgba(10, 20, 80, 0.2)), url(&quot;assets/business-general-hero-upload-1774791024606.webp&quot;); background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(10, 20, 80, 0.2); --zappy-bg-image: url(&quot;assets/business-general-hero-upload-1774791024606.webp&quot;)" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1774791024606.webp" data-zappy-bg-overlay-color="#0a1450" data-zappy-bg-overlay-opacity="20" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-content-align="top-right"><style data-zappy-align-style="true">#zappy-section-0 > [data-zappy-align-target] { margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: 0 !important; align-items: flex-start !important; justify-content: flex-start !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: 0 !important; justify-content: flex-start !important; padding-top: 0 !important; padding-bottom: 0 !important; }  @media (max-width: 768px) { #zappy-section-0 > [data-zappy-align-target] { align-items: center !important; justify-content: flex-start !important; margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-0 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: auto !important; } }</style>
   <!-- Background Image -->
   <div class="index-hero-bg" style="display: none" data-zappy-original-bg="hidden">
     <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Professional studio portrait of Moti Winkler, a distinguished Israeli financial advisor in his 50s, wearing a dark navy suit and tie, confident and approachable expression, photographed against a soft light gray textured backdrop. The composition is weighted toward the left side of the frame (leaving the right side open for text overlay). Cinematic lighting with subtle depth of field. High-end corporate portrait photography style, warm yet authoritative mood." width="1200" height="700" src="/assets/site-index-hero-image-1.webp" alt="מוטי וינקלר – מומחה פיננסי ויועץ השקעות בכיר" class="index-hero-img zappy-editable-image" data-hero-background="true" data-element-type="image" data-element-id="img-1774776364526-ps16ivnzc">
@@ -854,7 +854,7 @@
       <path d="M0,90 L0,48 Q120,28 240,44 T480,36 Q600,28 720,42 T960,32 Q1080,24 1200,40 L1200,90 Z" fill="#F7F2E8"></path>
     </svg>
   </div>
-</section><section class="index-services-section" dir="rtl" data-layout-spec="בית-services" id="zappy-section-1" data-zappy-content-align="top-center"><style data-zappy-align-style="true">#zappy-section-1 &gt; [data-zappy-align-target] { margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; display: flex !important; flex-direction: column !important; align-items: center !important; } #zappy-section-1 &gt; [data-zappy-align-target] &gt; * { justify-content: flex-start !important; padding-top: 0 !important; padding-bottom: 0 !important; }  @media (max-width: 768px) { #zappy-section-1 &gt; [data-zappy-align-target] { align-items: center !important; justify-content: flex-start !important; margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-1 &gt; [data-zappy-align-target] &gt; * { margin-left: auto !important; margin-right: auto !important; } }</style>
+</section><section class="index-services-section" dir="rtl" data-layout-spec="בית-services" id="zappy-section-1" data-zappy-content-align="top-center"><style data-zappy-align-style="true">#zappy-section-1 > [data-zappy-align-target] { margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; display: flex !important; flex-direction: column !important; align-items: center !important; } #zappy-section-1 > [data-zappy-align-target] > * { justify-content: flex-start !important; padding-top: 0 !important; padding-bottom: 0 !important; }  @media (max-width: 768px) { #zappy-section-1 > [data-zappy-align-target] { align-items: center !important; justify-content: flex-start !important; margin-top: 0 !important; margin-bottom: auto !important; margin-left: auto !important; margin-right: auto !important; } #zappy-section-1 > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: auto !important; } }</style>
   <div class="index-services-container" data-zappy-align-target="true">
 
     <!-- Centered Intro Block -->
@@ -1116,12 +1116,22 @@
 במס, למקסם את ההכנסות שלכם ולהבטיח מעבר חלק ונוח לשלב הפרישה. בתהליך זה נבחן
 יחד את כלל הנכסים הפיננסיים שלכם, נתאים עבורכם את האסטרטגיה הטובה ביותר למיצוי
 הטבות המס, ונוודא שתוכלו לשמור על רמת חיים גבוהה ויציבה גם לאחר הפרישה. בין
-התחומים בהם אתמקד:<br>תכנון מס
-     מותאם אישית לשלב הפרישה.<br>מיסוי על
-     קצבאות פנסיה ומענקי פרישה.<br>ייעוץ
-     בנוגע להטבות מס על חסכונות והשקעות.<br>ניצול
-     מיטבי של תיקון 190 לפקודת מס הכנסה.<br>ליווי אישי
-     בתהליך הפרישה מול מס הכנסה.אשמח לעמוד לרשותכם כדי להבטיח תכנון פיננסי, פנסיוני ומיסויי מיטבי,
+התחומים בהם אתמקד:<br>
+
+
+ תכנון מס
+     מותאם אישית לשלב הפרישה.<br>
+ מיסוי על
+     קצבאות פנסיה ומענקי פרישה.<br>
+ ייעוץ
+     בנוגע להטבות מס על חסכונות והשקעות.<br>
+ ניצול
+     מיטבי של תיקון 190 לפקודת מס הכנסה.<br>
+ ליווי אישי
+     בתהליך הפרישה מול מס הכנסה.
+
+
+אשמח לעמוד לרשותכם כדי להבטיח תכנון פיננסי, פנסיוני ומיסויי מיטבי,
 ולהוביל אתכם לעתיד בטוח ומבוסס כלכלית.&nbsp; &nbsp; &nbsp;&nbsp;</p>
         </div>
         <div class="index-services-outcome">
@@ -1284,7 +1294,7 @@
       <!-- Portrait Column (END = LEFT in RTL) -->
       <div class="index-profile-portrait-col">
         <div class="index-profile-portrait-frame">
-          <img data-placeholder="index-profile-image-1" data-context="Professional studio portrait of a confident, approachable Israeli male financial advisor in his 50s, wearing a well-tailored navy blue suit and white shirt, no tie, warm natural expression, photographed against a soft off-white or light gray background with subtle depth of field. The image should convey authority, warmth, and trustworthiness — suitable for a premium financial advisory personal brand website. Vertical portrait orientation, clean and editorial feel." width="480" height="620" src="/assets/business-general-service-upload-1774800094446.webp" alt="מוטי וינקלר - יועץ פיננסי בכיר" class="index-profile-portrait-img zappy-editable-image" data-element-type="image" data-element-id="img-1774792080426-vxpc4mxag" data-original-position="static" style="position: relative; object-position: 50% 50%; object-fit: contain; width: auto; height: auto; max-width: 600px; display: block; border-radius: 8px; margin-top: 20px; margin-right: auto !important; margin-bottom: 20px; margin-left: auto !important;" data-zappy-zoom="1">
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1774792080426-vxpc4mxag" data-element-type="image" data-zappy-zoom-wrapper-width="420px" data-zappy-zoom-wrapper-height="600px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 420px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 600px !important; display: block !important;"><img data-placeholder="index-profile-image-1" data-context="Professional studio portrait of a confident, approachable Israeli male financial advisor in his 50s, wearing a well-tailored navy blue suit and white shirt, no tie, warm natural expression, photographed against a soft off-white or light gray background with subtle depth of field. The image should convey authority, warmth, and trustworthiness — suitable for a premium financial advisory personal brand website. Vertical portrait orientation, clean and editorial feel." width="480" height="620" src="/assets/business-general-service-upload-1774898872828-gx67bm.webp?v=1774898874737" alt="מוטי וינקלר - יועץ פיננסי בכיר" class="index-profile-portrait-img zappy-editable-image" data-element-type="image" data-element-id="img-1774792080426-vxpc4mxag" data-original-position="static" style="position: absolute !important; object-position: 71% 55%; object-fit: cover !important; width: 181.567% !important; height: 100% !important; max-width: none !important; display: block; border-radius: 8px; margin: 0px !important; left: -57.9124% !important; top: 0% !important; max-height: none !important;" data-zappy-zoom="1" data-resize-handler-attached="true" data-zappy-original-width="420" data-zappy-original-height="600"></div>
           <div class="index-profile-portrait-badge">
             <span class="index-profile-badge-number">20+</span>
             <span class="index-profile-badge-label">שנות ניסיון</span>
@@ -1580,6 +1590,34 @@
       if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
       else { initMobileLangMenu(); }
       window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
+    })();
+    </script>
+
+    <script>
+    (function(){
+      if(window.innerWidth>768)return;
+      function fixZW(){
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          var cw=w.style.getPropertyValue('width');
+          if(!cw||cw==='100%')return;
+          w.style.setProperty('width','100%','important');
+          w.style.setProperty('max-width','100%','important');
+          w.style.setProperty('height','auto','important');
+          var img=w.querySelector('img');
+          if(img){
+            img.style.setProperty('position','relative','important');
+            img.style.setProperty('width','100%','important');
+            img.style.setProperty('height','auto','important');
+            img.style.setProperty('max-width','100%','important');
+            img.style.setProperty('max-height','400px','important');
+            img.style.setProperty('object-fit','cover','important');
+            img.style.setProperty('left','0','important');
+            img.style.setProperty('top','0','important');
+          }
+        });
+      }
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fixZW);
+      else setTimeout(fixZW,50);
     })();
     </script>
 </body>
