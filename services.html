@@ -242,6 +242,272 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.services-intro-section {
+  position: relative;
+  background-color: #F7F2E8;
+  background-image: linear-gradient(180deg, #F7F2E8 0%, #EEE7DB 100%);
+  color: var(--text-dark);
+  padding: 140px 24px 80px;
+  overflow: hidden;
+  direction: rtl;
+}
+
+/* ── Decorative circles ── */
+.services-intro-section .si-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+.services-intro-section .si-bg-circle--1 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(31,120,184,0.07) 0%, transparent 70%);
+  top: -120px;
+  inset-inline-end: -140px;
+}
+.services-intro-section .si-bg-circle--2 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(16,30,138,0.06) 0%, transparent 70%);
+  bottom: 60px;
+  inset-inline-start: -100px;
+}
+
+/* ── Container ── */
+.services-intro-section .si-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Header block ── */
+.services-intro-section .si-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.services-intro-section .si-eyebrow {
+  display: inline-block;
+  font-family: 'Assistant', 'Heebo', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(31,120,184,0.1);
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(31,120,184,0.2);
+}
+
+.services-intro-section .si-h1 {
+  font-family: 'Heebo', 'Assistant', Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #163A72;
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: 720px;
+  text-align: right;
+}
+
+.services-intro-section .si-experience-badge {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+  background: linear-gradient(135deg, #0D5FB8 0%, #143F82 100%);
+  padding: 10px 22px;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px rgba(13,95,184,0.22);
+}
+
+.services-intro-section .si-exp-number {
+  font-family: 'Heebo', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.services-intro-section .si-exp-label {
+  font-family: 'Assistant', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ── Intro text ── */
+.services-intro-section .si-intro-text {
+  max-width: 780px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.services-intro-section .si-intro-text p {
+  font-family: 'Assistant', 'Heebo', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin: 0;
+  text-align: right;
+}
+
+/* ── Cards grid ── */
+.services-intro-section .si-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  direction: rtl;
+}
+
+/* ── Individual card ── */
+.services-intro-section .si-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #D8D2C6;
+  border-radius: 0;
+  padding: 32px 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  overflow: hidden;
+}
+
+.services-intro-section .si-card:hover {
+  box-shadow: 0 16px 36px rgba(14,34,67,0.12);
+  transform: translateY(-4px);
+}
+
+.services-intro-section .si-card-accent-line {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0D5FB8 0%, #143F82 100%);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.3s ease;
+}
+
+.services-intro-section .si-card:hover .si-card-accent-line {
+  transform: scaleX(1);
+}
+
+/* ── Card icon ── */
+.services-intro-section .si-card-icon-wrap {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #0D5FB8 0%, #143F82 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(13,95,184,0.22);
+}
+
+.services-intro-section .si-card-icon-wrap svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* ── Card body ── */
+.services-intro-section .si-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.services-intro-section .si-card-title {
+  font-family: 'Heebo', 'Assistant', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #163A72;
+  margin: 0;
+  text-align: right;
+}
+
+.services-intro-section .si-card-text {
+  font-family: 'Assistant', 'Heebo', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #2E3440;
+  margin: 0;
+  text-align: right;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — TABLET (≤ 1024px)
+══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .services-intro-section .si-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-intro-section .si-h1 {
+    font-size: 38px;
+  }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — MOBILE (≤ 768px)
+══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .services-intro-section {
+    padding: 110px 16px 60px;
+  }
+
+  .services-intro-section .si-h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .services-intro-section .si-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .services-intro-section .si-intro-text {
+    margin-bottom: 36px;
+  }
+
+  .services-intro-section .si-bg-circle--1,
+  .services-intro-section .si-bg-circle--2 {
+    display: none;
+  }
+
+  .services-intro-section .si-card {
+    padding: 24px 20px 28px;
+  }
+
+  .services-intro-section .si-experience-badge {
+    padding: 8px 16px;
+  }
+
+  .services-intro-section .si-exp-number {
+    font-size: 22px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -783,108 +1049,93 @@
 </script>
   
   <main>
-    <section class="services-intro-section" data-layout-spec="שירותים-intro" dir="rtl" id="zappy-section-0">
-  <div class="services-intro-container">
-    <div class="services-intro-content">
-      <div class="services-intro-eyebrow">
-        <span class="services-intro-eyebrow-line"></span>
-        <span class="services-intro-eyebrow-text">השירותים שלנו</span>
-      </div>
-      <h1 class="services-intro-heading" >ליווי פיננסי מקיף —&nbsp;<br>כל ההחלטות, מקום אחד</h1>
-      <p class="services-intro-lead">כשמדובר בעתיד הפיננסי שלכם, כל תחום משפיע על השני. השקעה שלא מתואמת עם תוכנית הפנסיה, או ביטוח שאינו מותאם לתמונה הכוללת — עלולים לפגוע בתוצאה הסופית. מוטי וינקלר מציע גישה אינטגרטיבית: חשיבה כוללת בין השקעות, ביטוח ופנסיה, כדי שכל החלטה תשרת את המטרה הגדולה.</p>
-      <p class="services-intro-body">עם למעלה מ-20 שנות ניסיון בשוק ההון, מוטי מביא מומחיות עמוקה ונגישה לכל לקוח — בין אם אתם בתחילת הדרך, בשיא הקריירה, או מתכננים גמלאות. הייעוץ הפיננסי כאן אינו חד-פעמי; הוא מלווה אתכם לאורך כל שלבי החיים.</p>
-      <div class="services-intro-pillars">
-        <div class="services-intro-pillar zappy-grid-item-nested-grid zappy-preserve-css-grid" data-zappy-grid-align="flex-start" data-original-gap="16px" style="display: grid;" data-grid-item-index="0">
-          <div class="services-intro-pillar-icon" data-grid-item-index="0">
-            <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-          </div>
-          <div class="services-intro-pillar-text" data-grid-item-index="1">
-            <h3 >השקעות וחיסכון</h3>
-            <p >
+    <section class="services-intro-section" data-layout-spec="שירותים-intro" dir="rtl" data-zappy-section="true" id="zappy-section-0">
+  <div class="si-container">
 
-אפשרויות ההשקעה מגוונות כגון - פוליסת חיסכון, קופת גמל לפי תיקון 190,  תיק השקעות מנוהל והשקעות אלטרנטיביות.
-
-</p>
-          </div>
-        </div>
-        <div class="services-intro-pillar zappy-grid-item-nested-grid zappy-preserve-css-grid" data-zappy-grid-align="flex-start" data-original-gap="16px" style="display: grid;" data-grid-item-index="1">
-          <div class="services-intro-pillar-icon" data-grid-item-index="0">
-            <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          </div>
-          <div class="services-intro-pillar-text" data-grid-item-index="1">
-            <h3 >ניהול סיכונים</h3>
-            <p >כיסוי מקיף המותאם לצרכים האמיתיים שלכם ושל משפחתכם&nbsp; - ביטוח חיים, כתב שירות רפואי, ביטוח בריאות, ביטוח סיעודי,  ביטוח מחלות קשות, תאונות אישיות, ביטוח נסיעות לחו"ל ועוד.
-
-</p>
-          </div>
-        </div>
-        <div class="services-intro-pillar zappy-grid-item-nested-grid zappy-preserve-css-grid" data-zappy-grid-align="flex-start" data-original-gap="16px" style="display: grid;" data-grid-item-index="2">
-          <div class="services-intro-pillar-icon" data-grid-item-index="0">
-            <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          </div>
-          <div class="services-intro-pillar-text" data-grid-item-index="1">
-            <h3>פנסיה</h3>
-            <p >תכנון פנסיה לעתיד כלכלי יציב&nbsp; עם ראייה ארוכת טווח -&nbsp; &nbsp;קרן פנסיה, ביטוח מנהלים, קרן השתלמות, קופת גמל ואובדן כושר עבודה.
-
-</p>
-          </div>
-        </div><div class="services-intro-pillar zappy-grid-item-nested-grid zappy-preserve-css-grid" data-zappy-grid-align="flex-start" data-original-gap="16px" style="background-color: rgb(255, 255, 255) !important; padding: 20px !important; box-sizing: border-box;" data-grid-item-index="3">
-          <div class="services-intro-pillar-icon" data-grid-item-index="0">
-            <div class="zappy-icon-alignment-wrapper" style="display: flex; width: 100%; justify-content: center;"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="25" height="25" viewBox="0 0 24 24" data-icon="tabler:diamond" data-iconify="tabler:diamond" data-element-type="icon" data-element-id="icon-1774876325095-l4n0hoz9v" data-icon-type="iconify" data-size-adjusted="true" style="width: 25px !important; height: 25px !important; display: inline-block; vertical-align: -0.125em; color: rgb(31, 120, 184);" class="iconify iconify--tabler"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 5h12l3 5l-8.5 9.5a.7.7 0 0 1-1 0L3 10z"></path><path d="M10 12L8 9.8l.6-1"></path></g></svg></div>
-          </div>
-          <div class="services-intro-pillar-text" data-grid-item-index="1">
-            <h3 >תכנון פרישה</h3>
-            <p >פרישה היא צעד משמעותי בחיים - תכנון פרישה נכון יכול לחסוך עד מאות אלפי שקלים.<br><br></p>
-          </div>
-        </div>
+    <!-- Top eyebrow + headline block -->
+    <div class="si-header">
+      <span class="si-eyebrow">השירותים שלנו</span>
+      <h1 class="si-h1">ליווי פיננסי מקיף — כל ההחלטות, מקום אחד</h1>
+      <div class="si-experience-badge">
+        <span class="si-exp-number">20+</span>
+        <span class="si-exp-label">שנות ניסיון</span>
       </div>
     </div>
-    <div class="services-intro-graphic" aria-hidden="true">
-      <div class="services-intro-graphic-inner">
-        <svg class="services-intro-chart-svg" aria-hidden="true" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Background grid lines -->
-          <line x1="0" y1="340" x2="320" y2="340" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
-          <line x1="0" y1="280" x2="320" y2="280" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
-          <line x1="0" y1="220" x2="320" y2="220" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
-          <line x1="0" y1="160" x2="320" y2="160" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
-          <line x1="0" y1="100" x2="320" y2="100" stroke="#D8D2C6" stroke-width="1" stroke-dasharray="4 4"></line>
-          <!-- Growth line fill -->
-          <path d="M20,320 C60,310 90,290 130,250 C170,210 200,180 240,140 C265,115 290,90 310,60 L310,340 L20,340 Z" fill="rgba(31,120,184,0.08)"></path>
-          <!-- Growth line -->
-          <path d="M20,320 C60,310 90,290 130,250 C170,210 200,180 240,140 C265,115 290,90 310,60" stroke="#1F78B8" stroke-width="2.5" stroke-linecap="round" fill="none"></path>
-          <!-- Secondary line -->
-          <path d="M20,340 C70,335 110,325 150,310 C190,295 220,275 270,250 C285,242 300,235 310,228" stroke="#101E8A" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 3" fill="none" opacity="0.5"></path>
-          <!-- Dots on main line -->
-          <circle cx="20" cy="320" r="4" fill="#1F78B8"></circle>
-          <circle cx="130" cy="250" r="4" fill="#1F78B8"></circle>
-          <circle cx="240" cy="140" r="4" fill="#1F78B8"></circle>
-          <circle cx="310" cy="60" r="6" fill="#101E8A"></circle>
-          <!-- Top accent badge -->
-          <rect x="240" y="30" width="72" height="28" rx="4" fill="#101E8A"></rect>
-          <text x="276" y="49" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="12" font-weight="700" fill="#F7F7F5">+127%</text>
-          <!-- Vertical axis -->
-          <line x1="20" y1="60" x2="20" y2="345" stroke="#D8D2C6" stroke-width="1"></line>
-          <!-- Horizontal axis -->
-          <line x1="15" y1="340" x2="315" y2="340" stroke="#D8D2C6" stroke-width="1"></line>
-          <!-- Decorative geometric accent -->
-          <rect x="260" y="290" width="40" height="40" rx="4" fill="none" stroke="#1F78B8" stroke-width="1.5" opacity="0.3"></rect>
-          <rect x="268" y="298" width="24" height="24" rx="2" fill="rgba(31,120,184,0.12)"></rect>
-        </svg>
-        <div class="services-intro-stat-badge">
-          <span class="services-intro-stat-number">20+</span>
-          <span class="services-intro-stat-label">שנות ניסיון</span>
+
+    <!-- Intro paragraphs -->
+    <div class="si-intro-text">
+      <p>כשמדובר בעתיד הפיננסי שלכם, כל תחום משפיע על השני. השקעה שלא מתואמת עם תוכנית הפנסיה, או ביטוח שאינו מותאם לתמונה הכוללת — עלולים לפגוע בתוצאה הסופית. מוטי וינקלר מציע גישה אינטגרטיבית: חשיבה כוללת בין השקעות, ביטוח ופנסיה, כדי שכל החלטה תשרת את המטרה הגדולה.</p>
+      <p>עם למעלה מ-20 שנות ניסיון בשוק ההון, מוטי מביא מומחיות עמוקה ונגישה לכל לקוח — בין אם אתם בתחילת הדרך, בשיא הקריירה, או מתכננים גמלאות. הייעוץ הפיננסי כאן אינו חד-פעמי; הוא מלווה אתכם לאורך כל שלבי החיים.</p>
+    </div>
+
+    <!-- 4 service cards -->
+    <div class="si-cards-grid">
+
+      <!-- Card 1: השקעות וחיסכון -->
+      <article class="si-card">
+        <div class="si-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+            <polyline points="16 7 22 7 22 13"></polyline>
+          </svg>
         </div>
-        <div class="services-intro-accent-line"></div>
-      </div>
+        <div class="si-card-body">
+          <h3 class="si-card-title">השקעות וחיסכון</h3>
+          <p class="si-card-text">אפשרויות ההשקעה מגוונות כגון - פוליסת חיסכון, קופת גמל לפי תיקון 190, תיק השקעות מנוהל והשקעות אלטרנטיביות.</p>
+        </div>
+        <div class="si-card-accent-line"></div>
+      </article>
+
+      <!-- Card 2: ניהול סיכונים -->
+      <article class="si-card">
+        <div class="si-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div class="si-card-body">
+          <h3 class="si-card-title">ניהול סיכונים</h3>
+          <p class="si-card-text">כיסוי מקיף המותאם לצרכים האמיתיים שלכם ושל משפחתכם - ביטוח חיים, כתב שירות רפואי, ביטוח בריאות, ביטוח סיעודי, ביטוח מחלות קשות, תאונות אישיות, ביטוח נסיעות לחו"ל ועוד.</p>
+        </div>
+        <div class="si-card-accent-line"></div>
+      </article>
+
+      <!-- Card 3: פנסיה -->
+      <article class="si-card">
+        <div class="si-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <div class="si-card-body">
+          <h3 class="si-card-title">פנסיה</h3>
+          <p class="si-card-text">תכנון פנסיה לעתיד כלכלי יציב עם ראייה ארוכת טווח - קרן פנסיה, ביטוח מנהלים, קרן השתלמות, קופת גמל ואובדן כושר עבודה.</p>
+        </div>
+        <div class="si-card-accent-line"></div>
+      </article>
+
+      <!-- Card 4: תכנון פרישה -->
+      <article class="si-card">
+        <div class="si-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </div>
+        <div class="si-card-body">
+          <h3 class="si-card-title">תכנון פרישה</h3>
+          <p class="si-card-text">פרישה היא צעד משמעותי בחיים - תכנון פרישה נכון יכול לחסוך עד מאות אלפי שקלים.</p>
+        </div>
+        <div class="si-card-accent-line"></div>
+      </article>
+
     </div>
   </div>
-  <!-- Bottom divider: stepped linear transition with royal-blue accent line -->
-  <div class="services-intro-divider-wrapper">
-    <div class="services-intro-accent-divider-line"></div>
-    <svg aria-hidden="true" viewBox="0 0 1200 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,48 L0,24 L300,24 L300,12 L600,12 L600,0 L900,0 L900,12 L1200,12 L1200,48 Z" fill="#FFFFFF"></path>
-    </svg>
-  </div>
+
+  <!-- Decorative background geometry -->
+  <div class="si-bg-circle si-bg-circle--1" aria-hidden="true"></div>
+  <div class="si-bg-circle si-bg-circle--2" aria-hidden="true"></div>
 </section>
 
 <section class="services-capabilities-section" data-layout-spec="שירותים-capabilities" dir="rtl" id="zappy-section-1">
