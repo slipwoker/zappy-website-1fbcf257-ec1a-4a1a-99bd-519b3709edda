@@ -3669,372 +3669,29 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   }
 }
 
-/* services-benefits */
-.services-benefits-section {
-  position: relative;
-  overflow: visible;
-  background-color: #F7F2E8;
-  background-image: linear-gradient(180deg, #F7F2E8 0%, #EEE7DB 100%);
-  color: var(--text-dark);
-  padding: 96px 24px 112px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
-
 /* ── Container ── */
-.services-benefits-section .sbs-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
 
 /* ── Section Header ── */
-.services-benefits-section .sbs-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.services-benefits-section .sbs-eyebrow {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--primary);
-  text-transform: uppercase;
-  margin-bottom: 14px;
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 4px;
-}
-
-.services-benefits-section .sbs-title {
-  font-family: 'Rubik', sans-serif;
-  font-size: 34px;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: #163A72;
-  margin: 0 auto;
-  max-width: 680px;
-}
 
 /* ── Two-Column Layout ── */
-.services-benefits-section .sbs-columns {
-  display: grid;
-  grid-template-columns: 1fr 56px 1fr;
-  gap: 0;
-  align-items: start;
-}
 
 /* ── Column Label ── */
-.services-benefits-section .sbs-col-label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 10px 16px;
-  border-radius: 4px;
-  margin-bottom: 32px;
-}
-
-.services-benefits-section .sbs-label-problem {
-  background: rgba(154, 160, 166, 0.12);
-  color: #5A6370;
-  border: 1px solid var(--border-light);
-}
-
-.services-benefits-section .sbs-label-solution {
-  background: rgba(31, 120, 184, 0.1);
-  color: #163A72;
-  border: 1px solid rgba(31, 120, 184, 0.25);
-}
-
-.services-benefits-section .sbs-label-icon {
-  font-size: 16px;
-  line-height: 1;
-}
-
-.services-benefits-section .sbs-label-problem .sbs-label-icon {
-  color: #9AA0A6;
-}
-
-.services-benefits-section .sbs-label-solution .sbs-label-icon {
-  color: var(--primary);
-}
 
 /* ── Individual Blocks ── */
-.services-benefits-section .sbs-block {
-  margin-bottom: 0;
-  padding: 28px 0;
-}
-
-.services-benefits-section .sbs-col-problem .sbs-block h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #4A5568;
-  margin: 0 0 10px 0;
-}
-
-.services-benefits-section .sbs-col-problem .sbs-block p {
-  color: #6B7280;
-  line-height: 1.75;
-  margin: 0;
-}
 
 /* Problem column subtle left-border accent */
-.services-benefits-section .sbs-col-problem .sbs-block {
-  padding-inline-end: 24px;
-  border-inline-end: 2px solid var(--border-light);
-}
 
 /* Divider lines between problem blocks */
-.services-benefits-section .sbs-divider-line {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-light) 40%, transparent);
-  margin: 0;
-}
 
 /* ── Solution Column Blocks ── */
-.services-benefits-section .sbs-block-highlight {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 0 16px;
-  align-items: start;
-  padding: 28px 24px 28px 0;
-  border-radius: 8px;
-  transition: background 0.25s ease, box-shadow 0.25s ease;
-}
-
-.services-benefits-section .sbs-block-highlight:hover {
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 16px 36px rgba(14, 34, 67, 0.1);
-}
-
-.services-benefits-section .sbs-block-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #1E4F93 0%, #133768 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.services-benefits-section .sbs-block-icon i {
-  color: #F7F7F5;
-  font-size: 18px;
-}
-
-.services-benefits-section .sbs-block-content h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.3;
-  color: #163A72;
-  margin: 0 0 8px 0;
-}
-
-.services-benefits-section .sbs-block-content p {
-  color: var(--text-dark);
-  line-height: 1.75;
-  margin: 0;
-}
 
 /* ── Center Separator ── */
-.services-benefits-section .sbs-separator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 64px;
-  gap: 12px;
-  height: 100%;
-}
-
-.services-benefits-section .sbs-separator-line {
-  flex: 1;
-  width: 1px;
-  background: linear-gradient(180deg, transparent, var(--border-light) 40%, transparent);
-  min-height: 60px;
-}
-
-.services-benefits-section .sbs-separator-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 24px rgba(14, 34, 67, 0.08);
-  flex-shrink: 0;
-}
-
-.services-benefits-section .sbs-separator-icon i {
-  color: var(--primary);
-  font-size: 14px;
-}
 
 /* ── CTA Strip ── */
-.services-benefits-section .sbs-cta-strip {
-  margin-top: 64px;
-  padding: 40px 48px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-  box-shadow: 0 16px 36px rgba(14, 34, 67, 0.1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.services-benefits-section .sbs-cta-text {
-  font-size: 18px;
-  font-weight: 600;
-  color: #163A72;
-  margin: 0;
-  line-height: 1.5;
-  flex: 1;
-}
-
-.services-benefits-section .sbs-cta-btn {
-  display: inline-block;
-  background: #0D5FB8;
-  color: #FFFFFF;
-  padding: 14px 32px;
-  border-radius: 6px;
-  border: 1px solid #0D5FB8;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  white-space: nowrap;
-  box-shadow: 0 6px 16px rgba(13, 95, 184, 0.22);
-  transition: all 0.25s ease;
-  flex-shrink: 0;
-}
-
-.services-benefits-section .sbs-cta-btn:hover {
-  background: #163A72;
-  border-color: #163A72;
-  box-shadow: 0 16px 36px rgba(13, 95, 184, 0.28);
-  transform: translateY(-2px);
-}
 
 /* ── Bottom Gradient Ribbon Divider ── */
-.services-benefits-section .sbs-divider-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.services-benefits-section .sbs-divider-wrapper svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 
 /* ── RESPONSIVE ── */
-@media (max-width: 960px) {
-  .services-benefits-section .sbs-columns {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .services-benefits-section .sbs-separator {
-    flex-direction: row;
-    padding-top: 0;
-    padding: 16px 0;
-    height: auto;
-  }
-
-  .services-benefits-section .sbs-separator-line {
-    flex: 1;
-    width: auto;
-    height: 1px;
-    min-height: unset;
-    background: linear-gradient(90deg, transparent, var(--border-light) 40%, transparent);
-  }
-
-  .services-benefits-section .sbs-col-problem .sbs-block {
-    padding-inline-end: 0;
-    border-inline-end: none;
-    border-bottom: 2px solid var(--border-light);
-    padding-bottom: 24px;
-  }
-
-  .services-benefits-section .sbs-cta-strip {
-    flex-direction: column;
-    text-align: center;
-    padding: 32px 24px;
-  }
-
-  .services-benefits-section .sbs-cta-text {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .services-benefits-section {
-    padding: 56px 16px 96px;
-  }
-
-  .services-benefits-section .sbs-header {
-    margin-bottom: 40px;
-  }
-
-  .services-benefits-section .sbs-title {
-    font-size: 26px;
-  }
-
-  .services-benefits-section .sbs-col-problem .sbs-block h3,
-  .services-benefits-section .sbs-block-content h3 {
-    font-size: 18px;
-  }
-
-  .services-benefits-section .sbs-block-highlight {
-    grid-template-columns: 40px 1fr;
-    padding: 20px 12px 20px 0;
-  }
-
-  .services-benefits-section .sbs-block-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .services-benefits-section .sbs-block-icon i {
-    font-size: 16px;
-  }
-
-  .services-benefits-section .sbs-cta-strip {
-    margin-top: 40px;
-    padding: 24px 16px;
-  }
-
-  .services-benefits-section .sbs-cta-text {
-    font-size: 16px;
-  }
-
-  .services-benefits-section .sbs-cta-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
 
 /* services-process */
 .services-process-section {
@@ -8350,6 +8007,271 @@ html body nav.navbar.scrolled {
   .index-trust-signals-section .its-stat-card {
     border-inline-start: none;
     border-top: 1px solid var(--border-light);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (שירותים-benefits)
+   Added: 2026-03-31T09:07:53.848Z
+   ═══════════════════════════════════════════════════════════ */
+.services-benefits-section {
+  direction: rtl;
+  background-color: #F7F2E8;
+  background-image: linear-gradient(180deg, #F7F2E8 0%, #EEE7DB 100%);
+  color: var(--text-dark);
+  padding: 80px 24px 90px;
+  position: relative;
+  overflow: visible;
+  font-family: Assistant, Heebo, Arial, sans-serif;
+}
+
+/* ── Header ── */
+.services-benefits-section .sbs-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.services-benefits-section .sbs-eyebrow {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.services-benefits-section .sbs-title {
+  font-family: Heebo, Assistant, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  text-align: center;
+  margin: 0;
+}
+
+/* ── Main Container (two columns + divider) ── */
+.services-benefits-section .sbs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 64px 1fr;
+  gap: 0 0;
+  align-items: start;
+}
+
+/* ── Column Labels ── */
+.services-benefits-section .sbs-column-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.services-benefits-section .sbs-label-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.services-benefits-section .sbs-dot-problem {
+  background: #D0D4D8;
+}
+
+.services-benefits-section .sbs-dot-solution {
+  background: var(--primary);
+}
+
+/* ── Cards ── */
+.services-benefits-section .sbs-card {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 0 16px;
+  align-items: start;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.2s ease;
+}
+
+.services-benefits-section .sbs-card:last-child {
+  border-bottom: none;
+}
+
+.services-benefits-section .sbs-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.services-benefits-section .sbs-problem-card .sbs-card-icon {
+  background: rgba(154, 160, 166, 0.12);
+  color: var(--secondary);
+}
+
+.services-benefits-section .sbs-solution-card .sbs-card-icon {
+  background: rgba(31, 120, 184, 0.1);
+  color: var(--primary);
+}
+
+.services-benefits-section .sbs-card-body {
+  min-width: 0;
+}
+
+.services-benefits-section .sbs-card-body h3 {
+  font-family: Heebo, Assistant, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin: 0 0 6px;
+  text-align: right;
+}
+
+.services-benefits-section .sbs-solution-card .sbs-card-body h3 {
+  color: var(--accent);
+}
+
+.services-benefits-section .sbs-card-body p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-dark);
+  margin: 0;
+  text-align: right;
+  opacity: 0.85;
+}
+
+/* ── Center Divider ── */
+.services-benefits-section .sbs-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 56px;
+  gap: 0;
+  color: var(--primary);
+  opacity: 0.5;
+}
+
+.services-benefits-section .sbs-divider-line {
+  width: 1px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(180deg, transparent 0%, var(--primary) 50%, transparent 100%);
+  opacity: 0.4;
+}
+
+.services-benefits-section .sbs-divider-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 8px 0;
+  box-shadow: 0 4px 12px rgba(14,34,67,0.08);
+}
+
+/* ── Hover States ── */
+.services-benefits-section .sbs-problem-card:hover {
+  background: rgba(154, 160, 166, 0.05);
+  border-radius: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+}
+
+.services-benefits-section .sbs-solution-card:hover {
+  background: rgba(31, 120, 184, 0.04);
+  border-radius: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+}
+
+/* ── Responsive: Tablet ── */
+@media (max-width: 900px) {
+  .services-benefits-section .sbs-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .services-benefits-section .sbs-divider {
+    flex-direction: row;
+    padding-top: 0;
+    padding: 24px 0;
+    justify-content: center;
+    opacity: 0.4;
+  }
+
+  .services-benefits-section .sbs-divider-line {
+    flex: 1;
+    min-height: 1px;
+    height: 1px;
+    width: auto;
+    background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+  }
+
+  .services-benefits-section .sbs-divider-icon {
+    transform: rotate(90deg);
+    margin: 0 12px;
+  }
+}
+
+/* ── Responsive: Mobile ── */
+@media (max-width: 768px) {
+  .services-benefits-section {
+    padding: 60px 16px 70px;
+  }
+
+  .services-benefits-section .sbs-header {
+    margin-bottom: 40px;
+  }
+
+  .services-benefits-section .sbs-title {
+    font-size: 26px;
+  }
+
+  .services-benefits-section .sbs-card {
+    grid-template-columns: 40px 1fr;
+    gap: 0 12px;
+    padding: 16px 0;
+  }
+
+  .services-benefits-section .sbs-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .services-benefits-section .sbs-card-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .services-benefits-section .sbs-card-body h3 {
+    font-size: 15px;
+  }
+
+  .services-benefits-section .sbs-problem-card:hover,
+  .services-benefits-section .sbs-solution-card:hover {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
   }
 }
 
