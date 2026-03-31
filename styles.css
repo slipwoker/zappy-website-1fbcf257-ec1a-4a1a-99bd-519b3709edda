@@ -2599,7 +2599,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   min-height: 100svh;
   align-items: flex-end;
   padding-bottom: 90px;
-  background-position: center center !important;
+  background-position: 65% center !important;
 }
 
   .index-hero-section .index-hero-scrim {
