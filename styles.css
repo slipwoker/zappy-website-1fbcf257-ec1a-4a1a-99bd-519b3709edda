@@ -8292,6 +8292,15 @@ body.accessibility-widget-visible ._access-menu {
   height: 67px !important;
 }
 
+#layout-1774900727659 [data-zappy-zoom-wrapper="true"] {
+  width: 200px !important;
+  height: 160px !important;
+}
+
+#layout-1774900727659 .zappy-grid-item-media-only {
+  height: 160px !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
