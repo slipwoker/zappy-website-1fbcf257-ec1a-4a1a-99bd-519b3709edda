@@ -8364,6 +8364,18 @@ body.accessibility-widget-visible ._access-menu {
 }
 }
 
+@media (max-width: 768px) {
+.index-hero-section {
+  background-position: 85% top !important;
+}
+}
+
+@media (max-width: 768px) {
+.index-hero-section {
+  background-position: 20% top !important;
+}
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
