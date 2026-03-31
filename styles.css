@@ -8314,6 +8314,14 @@ body.accessibility-widget-visible ._access-menu {
   background-image: none !important;
 }
 
+html body .navbar,
+html body nav.navbar,
+html body .navbar.scrolled,
+html body nav.navbar.scrolled {
+  background-color: #F7F2E8 !important;
+  background-image: none !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
