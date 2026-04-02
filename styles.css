@@ -8390,6 +8390,31 @@ html body nav.navbar.scrolled {
   overflow: visible !important;
 }
 
+.site-footer .footer-brand > div {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.site-footer .footer-col h3,
+.site-footer .footer-col h4,
+.site-footer .footer-col p,
+.site-footer .footer-col li,
+.site-footer .footer-col a,
+.site-footer .footer-col span,
+.site-footer .footer-description,
+.site-footer .contact-list a,
+.site-footer .contact-list li,
+.site-footer .contact-list span,
+.site-footer .footer-legal a,
+.site-footer .copyright p,
+.site-footer .footer-bottom a,
+.site-footer .footer-bottom p,
+.site-footer .footer-bottom span:not(.separator) {
+  color: #ffffff !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
