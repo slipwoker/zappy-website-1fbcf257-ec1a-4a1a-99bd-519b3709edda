@@ -8470,6 +8470,24 @@ html body nav.navbar.scrolled {
   overflow: hidden !important;
 }
 
+#layout-1775121383154 .image-card-grid .zappy-grid-item [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#layout-1775121383154 .image-card-grid .zappy-grid-item [data-zappy-zoom-wrapper] img {
+  width: 100% !important;
+  height: 120px !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
