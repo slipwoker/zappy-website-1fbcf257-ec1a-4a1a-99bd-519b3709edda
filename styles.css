@@ -8488,6 +8488,52 @@ html body nav.navbar.scrolled {
   max-height: none !important;
 }
 
+#layout-1775121383154 .image-card-grid .zappy-grid-item [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#layout-1775121383154 .image-card-grid .zappy-grid-item [data-zappy-zoom-wrapper] img {
+  width: 100% !important;
+  height: 120px !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+}
+
+#layout-1775121383154 .image-card-grid .zappy-grid-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px !important;
+}
+
+#layout-1775121383154 .image-card-grid .zappy-grid-item [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#layout-1775121383154 .image-card-grid .zappy-grid-item [data-zappy-zoom-wrapper] img {
+  width: 100% !important;
+  height: 100px !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
