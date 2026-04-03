@@ -8534,6 +8534,216 @@ html body nav.navbar.scrolled {
   max-height: 100% !important;
 }
 
+/* Added Component Styles */
+/* =============================================
+   Clients / Trusted-By Section
+   ============================================= */
+.clients-trusted-section {
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  padding: 72px 24px 64px;
+  text-align: center;
+}
+
+/* Container */
+.clients-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.clients-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a2a3a;
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Subtitle */
+.clients-subtitle {
+  font-size: 1rem;
+  color: #5a6a7a;
+  margin: 0 0 48px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Decorative underline accent under title */
+.clients-title::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: var(--primary, #1F78B8);
+  border-radius: 2px;
+  margin: 12px auto 0;
+}
+
+/* ---- Logo Grid ---- */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px 16px;
+  align-items: start;
+  justify-items: center;
+}
+
+/* Individual logo item */
+.clients-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Circular container */
+.clients-logo-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #f2f5f8;
+  border: 1.5px solid #e0e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.clients-logo-circle:hover {
+  background-color: #eaf2fb;
+  border-color: var(--primary, #1F78B8);
+  box-shadow: 0 6px 20px rgba(31, 120, 184, 0.18);
+  transform: translateY(-3px);
+}
+
+/* Logo image — always contain, never crop */
+.clients-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+  transition: opacity 0.2s ease;
+}
+
+.clients-logo-circle:hover .clients-logo-img {
+  opacity: 0.9;
+}
+
+/* Company name label */
+.clients-logo-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+/* Divider */
+.clients-divider {
+  width: 60px;
+  height: 1px;
+  background: #d0dce8;
+  margin: 44px auto 18px;
+  border-radius: 1px;
+}
+
+/* Footnote */
+.clients-footnote {
+  font-size: 0.9rem;
+  color: #7a8a9a;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* =============================================
+   Responsive — Tablet (max 1024px)
+   ============================================= */
+@media (max-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 14px;
+  }
+
+  .clients-logo-circle {
+    width: 100px;
+    height: 100px;
+    padding: 14px;
+  }
+}
+
+/* =============================================
+   Responsive — Mobile (max 640px)
+   ============================================= */
+@media (max-width: 640px) {
+  .clients-trusted-section {
+    padding: 52px 16px 48px;
+  }
+
+  .clients-title {
+    font-size: 1.55rem;
+  }
+
+  .clients-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 36px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 10px;
+  }
+
+  .clients-logo-circle {
+    width: 86px;
+    height: 86px;
+    padding: 12px;
+  }
+
+  .clients-logo-name {
+    font-size: 0.7rem;
+  }
+
+  .clients-divider {
+    margin: 32px auto 14px;
+  }
+
+  .clients-footnote {
+    font-size: 0.82rem;
+  }
+}
+
+/* =============================================
+   Responsive — Very small (max 360px)
+   ============================================= */
+@media (max-width: 360px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 10px;
+  }
+
+  .clients-logo-circle {
+    width: 96px;
+    height: 96px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
