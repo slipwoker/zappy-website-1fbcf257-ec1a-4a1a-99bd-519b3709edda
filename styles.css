@@ -8543,6 +8543,13 @@ html body nav.navbar.scrolled {
 /* /Zappy custom logo size */
 
 
+.site-footer .footer-brand > div, .site-footer .footer-brand > div * {
+  background: #0D1A7A !important;
+  background-color: #0D1A7A !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
