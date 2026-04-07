@@ -7132,13 +7132,12 @@ body.accessibility-widget-visible ._access-menu {
   color: rgba(255,255,255,0.85);
 }
 
-/* ── Intro text ── */
 .services-intro-section .si-intro-text {
   max-width: 780px;
   margin-bottom: 56px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 6px;
 }
 
 .services-intro-section .si-intro-text p {
