@@ -8551,6 +8551,169 @@ html body nav.navbar.scrolled {
 /* /Zappy custom logo size */
 
 
+/* AI-generated section */
+/* ===== Partners & Brands Section — מוטי וינקלר ===== */
+
+.partners-winkler {
+  background-color: #F7F2E8;
+  padding: 64px 20px 72px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+}
+
+/* Container */
+.partners-winkler__container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section subtitle / heading */
+.partners-winkler__subtitle {
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5a6478;
+  margin: 0 0 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.partners-winkler__subtitle::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--primary, #1F78B8);
+  border-radius: 2px;
+  margin: 10px auto 0;
+}
+
+/* Grid layout — 4 columns */
+.partners-winkler__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+}
+
+/* Individual card wrapper */
+.partners-winkler__item {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Anchor — card style */
+.partners-winkler__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 24px 16px 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 120, 184, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(31, 120, 184, 0.07);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+  cursor: pointer;
+  outline-offset: 3px;
+}
+
+.partners-winkler__link:hover,
+.partners-winkler__link:focus-visible {
+  transform: translateY(-4px) scale(1.025);
+  box-shadow: 0 10px 28px rgba(31, 120, 184, 0.18);
+  border-color: rgba(31, 120, 184, 0.45);
+}
+
+.partners-winkler__link:focus-visible {
+  outline: 2px solid var(--primary, #1F78B8);
+}
+
+/* Logo image */
+.partners-winkler__logo {
+  width: 160px;
+  height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.partners-winkler__link:hover .partners-winkler__logo {
+  opacity: 0.88;
+}
+
+/* Company name label */
+.partners-winkler__name {
+  font-family: system-ui, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #3a4560;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.partners-winkler__link:hover .partners-winkler__name {
+  color: var(--primary, #1F78B8);
+}
+
+/* ===== Responsive — Tablet ===== */
+@media (max-width: 860px) {
+  .partners-winkler__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .partners-winkler__logo {
+    width: 130px;
+    height: 65px;
+  }
+}
+
+/* ===== Responsive — Mobile ===== */
+@media (max-width: 480px) {
+  .partners-winkler {
+    padding: 48px 16px 56px;
+  }
+
+  .partners-winkler__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .partners-winkler__link {
+    padding: 18px 10px 16px;
+    gap: 10px;
+  }
+
+  .partners-winkler__logo {
+    width: 100px;
+    height: 52px;
+  }
+
+  .partners-winkler__subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 28px;
+  }
+
+  .partners-winkler__name {
+    font-size: 0.8rem;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
