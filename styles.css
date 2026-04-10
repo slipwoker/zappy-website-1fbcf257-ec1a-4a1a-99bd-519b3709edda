@@ -8736,14 +8736,14 @@ html body nav.navbar.scrolled {
 #zappy-section-5 .partners-winkler__link {
   border: none !important;
   box-shadow: none !important;
-  background: #ffffff !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 #zappy-section-5 .partners-winkler__link:hover,
 #zappy-section-5 .partners-winkler__link:focus-visible {
   border: none !important;
   box-shadow: none !important;
-  background: #ffffff !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 #zappy-section-5 .partners-winkler__link {
