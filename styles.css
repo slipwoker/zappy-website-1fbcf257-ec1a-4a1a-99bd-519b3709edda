@@ -8714,6 +8714,25 @@ html body nav.navbar.scrolled {
   }
 }
 
+#zappy-section-5 .partners-winkler__logo {
+  width: 240px !important;
+  height: 120px !important;
+}
+
+@media (max-width: 860px) {
+#zappy-section-5 .partners-winkler__logo {
+  width: 180px !important;
+  height: 90px !important;
+}
+}
+
+@media (max-width: 480px) {
+#zappy-section-5 .partners-winkler__logo {
+  width: 140px !important;
+  height: 72px !important;
+}
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
