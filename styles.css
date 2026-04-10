@@ -9077,6 +9077,38 @@ html body nav.navbar.scrolled {
   }
 }
 
+.partners-logos-section {
+  background-color: #EDECEA !important;
+  background-image: none !important;
+}
+
+.partners-logos-section .partners-logo-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.partners-logos-section .partners-logo-image-wrap {
+  background: transparent !important;
+}
+
+.partners-logos-section .partners-logo-img {
+  mix-blend-mode: multiply;
+}
+
+.partners-logos-section .partners-logos-grid {
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+.partners-logos-section .partners-logo-item {
+  background: transparent !important;
+}
+
+.partners-logos-section .partners-logo-link {
+  background: transparent !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
