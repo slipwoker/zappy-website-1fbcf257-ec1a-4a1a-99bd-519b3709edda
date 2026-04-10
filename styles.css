@@ -8715,21 +8715,21 @@ html body nav.navbar.scrolled {
 }
 
 #zappy-section-5 .partners-winkler__logo {
-  width: 280px !important;
-  height: 140px !important;
+  width: 560px !important;
+  height: 280px !important;
 }
 
 @media (max-width: 860px) {
 #zappy-section-5 .partners-winkler__logo {
-  width: 180px !important;
-  height: 90px !important;
+  width: 360px !important;
+  height: 180px !important;
 }
 }
 
 @media (max-width: 480px) {
 #zappy-section-5 .partners-winkler__logo {
-  width: 140px !important;
-  height: 72px !important;
+  width: 280px !important;
+  height: 144px !important;
 }
 }
 
