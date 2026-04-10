@@ -8736,14 +8736,14 @@ html body nav.navbar.scrolled {
 #zappy-section-5 .partners-winkler__link {
   border: none !important;
   box-shadow: none !important;
-  background: rgb(255, 255, 255) !important;
+  background: #ffffff !important;
 }
 
 #zappy-section-5 .partners-winkler__link:hover,
 #zappy-section-5 .partners-winkler__link:focus-visible {
   border: none !important;
   box-shadow: none !important;
-  background: rgb(255, 255, 255) !important;
+  background: #ffffff !important;
 }
 
 #zappy-section-5 .partners-winkler__link {
@@ -8752,6 +8752,12 @@ html body nav.navbar.scrolled {
 
 #zappy-section-5 .partners-winkler__link:hover, #zappy-section-5 .partners-winkler__link:focus-visible {
   background: #F7F2E8 !important;
+}
+
+#zappy-section-5 .partners-winkler__item,
+#zappy-section-5 .partners-winkler__item .partners-winkler__link {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
