@@ -8715,8 +8715,8 @@ html body nav.navbar.scrolled {
 }
 
 #zappy-section-5 .partners-winkler__logo {
-  width: 240px !important;
-  height: 120px !important;
+  width: 280px !important;
+  height: 140px !important;
 }
 
 @media (max-width: 860px) {
@@ -8731,6 +8731,19 @@ html body nav.navbar.scrolled {
   width: 140px !important;
   height: 72px !important;
 }
+}
+
+#zappy-section-5 .partners-winkler__link {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+#zappy-section-5 .partners-winkler__link:hover,
+#zappy-section-5 .partners-winkler__link:focus-visible {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
