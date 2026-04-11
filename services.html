@@ -511,181 +511,134 @@
 
 
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .services-benefits-section {
+  background-color: #F7F2E8;
+  background-image: linear-gradient(180deg, #F7F2E8 0%, #EEE7DB 100%);
+  color: var(--text-dark);
+  padding: 80px 24px 80px;
   position: relative;
-  background-color: #101E8A;
-  background-image:
-    radial-gradient(ellipse at 10% 20%, rgba(31,120,184,0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 90% 80%, rgba(13,95,184,0.22) 0%, transparent 55%),
-    linear-gradient(180deg, #1E4F93 0%, #133768 100%);
-  color: var(--text-light);
-  padding: 100px 24px 80px;
   overflow: visible;
   direction: rtl;
+  font-family: Assistant, Heebo, Arial, sans-serif;
 }
 
-/* Background decorative grid */
-.services-benefits-section .sbs-bg-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.services-benefits-section .sbs-bg-glow {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.services-benefits-section .sbs-glow-1 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(31,120,184,0.15) 0%, transparent 70%);
-  top: -100px;
-  inset-inline-end: -100px;
-}
-
-.services-benefits-section .sbs-glow-2 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(16,30,138,0.2) 0%, transparent 70%);
-  bottom: -80px;
-  inset-inline-start: -80px;
-}
-
-/* Container */
-.services-benefits-section .sbs-container {
-  position: relative;
-  z-index: 1;
+.sbs-container {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
-/* Section Header */
-.services-benefits-section .sbs-header {
+.sbs-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+  max-width: 820px;
+  margin-inline: auto;
+  margin-bottom: 56px;
 }
 
-.services-benefits-section .sbs-main-title {
-  font-family: 'Heebo', 'Assistant', Arial, sans-serif;
+.sbs-main-title {
+  font-family: Heebo, Assistant, Arial, sans-serif;
   font-size: 34px;
   font-weight: 800;
+  line-height: 1.25;
   letter-spacing: -0.01em;
-  line-height: 1.2;
-  color: var(--text-light);
+  color: #163A72;
   margin: 0 0 16px;
 }
 
-.services-benefits-section .sbs-subtitle {
-  font-family: 'Assistant', 'Heebo', Arial, sans-serif;
+.sbs-subtitle {
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.75;
-  color: rgba(247,247,245,0.75);
-  margin: 0 auto;
-  max-width: 560px;
+  color: var(--text-muted);
+  margin: 0;
 }
 
-/* Comparison Wrapper */
-.services-benefits-section .sbs-comparison-wrapper {
+.sbs-columns {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 0 32px;
+  grid-template-columns: 1fr 56px 1fr;
+  gap: 0;
   align-items: start;
-  direction: rtl;
+  margin-bottom: 56px;
 }
 
-/* Columns */
-.services-benefits-section .sbs-column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-/* Column Label */
-.services-benefits-section .sbs-column-label {
+.sbs-column-label {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  font-family: 'Heebo', 'Assistant', Arial, sans-serif;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border-radius: 0;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 10px 16px;
-  border-radius: 4px;
-  margin-bottom: 8px;
 }
 
-.services-benefits-section .sbs-column-problem .sbs-column-label {
-  background: rgba(255,255,255,0.06);
-  color: rgba(247,247,245,0.65);
-  border: 1px solid rgba(255,255,255,0.12);
+.sbs-column-label {
+  background: rgba(220, 53, 69, 0.08);
+  color: #b91c1c;
+  border-inline-start: 3px solid #ef4444;
 }
 
-.services-benefits-section .sbs-column-solution .sbs-column-label {
-  background: rgba(31,120,184,0.18);
-  color: #7EC8F5;
-  border: 1px solid rgba(31,120,184,0.35);
+.sbs-column-label {
+  background: rgba(13, 95, 184, 0.08);
+  color: #163A72;
+  border-inline-start: 3px solid var(--primary);
 }
 
-.services-benefits-section .sbs-label-icon {
-  display: flex;
-  align-items: center;
+.sbs-label-icon {
+  font-size: 18px;
+  line-height: 1;
   flex-shrink: 0;
 }
 
-/* Cards */
-.services-benefits-section .sbs-card {
+.sbs-label-icon {
+  color: #ef4444;
+}
+
+.sbs-label-icon {
+  color: var(--primary);
+}
+
+.sbs-label-text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.sbs-card {
   display: grid;
   grid-template-columns: 52px 1fr;
   gap: 0 16px;
-  padding: 20px 20px;
-  border-radius: 4px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   align-items: start;
+  padding: 20px 20px;
+  margin-bottom: 12px;
+  border-radius: 0;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.services-benefits-section .sbs-card:hover {
-  transform: translateY(-3px);
+.sbs-problem-card {
+  background: #FFFFFF;
+  border: 1px solid #E8D9D9;
+  border-inline-start: 3px solid #ef4444;
 }
 
-.services-benefits-section .sbs-card-problem {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.10);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+.sbs-solution-card {
+  background: #FFFFFF;
+  border: 1px solid #D8E6F5;
+  border-inline-start: 3px solid var(--primary);
 }
 
-.services-benefits-section .sbs-card-problem:hover {
-  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
-  background: rgba(255,255,255,0.07);
-}
-
-.services-benefits-section .sbs-card-solution {
-  background: rgba(31,120,184,0.12);
-  border: 1px solid rgba(31,120,184,0.28);
-  box-shadow: 0 4px 16px rgba(13,95,184,0.15);
-}
-
-.services-benefits-section .sbs-card-solution:hover {
-  box-shadow: 0 10px 28px rgba(13,95,184,0.28);
-  background: rgba(31,120,184,0.18);
-}
-
-/* Card Icon */
-.services-benefits-section .sbs-card-icon {
+.sbs-card-icon {
   width: 48px;
   height: 48px;
-  border-radius: 4px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,173 +646,153 @@
   margin-top: 2px;
 }
 
-.services-benefits-section .sbs-icon-problem {
-  background: rgba(255,255,255,0.08);
-  color: rgba(247,247,245,0.55);
+.sbs-icon-problem {
+  background: rgba(239, 68, 68, 0.10);
+  color: #ef4444;
 }
 
-.services-benefits-section .sbs-icon-solution {
-  background: rgba(31,120,184,0.25);
-  color: #7EC8F5;
+.sbs-icon-solution {
+  background: rgba(13, 95, 184, 0.10);
+  color: var(--primary);
 }
 
-/* Card Content */
-.services-benefits-section .sbs-card-content {
+.sbs-card-content {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.services-benefits-section .sbs-card-content h3 {
-  font-family: 'Heebo', 'Assistant', Arial, sans-serif;
+.sbs-card-title {
+  font-family: Heebo, Assistant, Arial, sans-serif;
   font-size: 17px;
-  font-weight: 700;
-  line-height: 1.3;
-  color: var(--text-light);
-  margin: 0;
-  text-align: start;
-}
-
-.services-benefits-section .sbs-card-problem .sbs-card-content h3 {
-  color: rgba(247,247,245,0.80);
-}
-
-.services-benefits-section .sbs-card-solution .sbs-card-content h3 {
-  color: var(--text-light);
-}
-
-.services-benefits-section .sbs-card-content p {
-  font-family: 'Assistant', 'Heebo', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(247,247,245,0.65);
-  margin: 0;
-  text-align: start;
-}
-
-.services-benefits-section .sbs-card-solution .sbs-card-content p {
-  color: rgba(247,247,245,0.75);
-}
-
-/* Center Divider */
-.services-benefits-section .sbs-divider-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding-top: 56px;
-  min-width: 48px;
-}
-
-.services-benefits-section .sbs-divider-line {
-  flex: 1;
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent);
-  min-height: 80px;
-}
-
-.services-benefits-section .sbs-divider-vs {
-  font-family: 'Heebo', 'Assistant', Arial, sans-serif;
-  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.1em;
-  color: rgba(247,247,245,0.35);
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  line-height: 1.3;
+  color: #163A72;
+  margin: 0;
+}
+
+.sbs-card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.sbs-divider-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  padding-top: 52px;
+  position: relative;
 }
 
-/* ============================================
-   RESPONSIVE — TABLET
-   ============================================ */
-@media (max-width: 1024px) {
-  .services-benefits-section .sbs-comparison-wrapper {
-    gap: 0 20px;
-  }
-
-  .services-benefits-section .sbs-card {
-    grid-template-columns: 44px 1fr;
-    gap: 0 12px;
-    padding: 16px;
-  }
-
-  .services-benefits-section .sbs-card-icon {
-    width: 40px;
-    height: 40px;
-  }
+.sbs-arrow-wrap {
+  width: 40px;
+  height: 40px;
+  background-color: #163A72;
+  background-image: linear-gradient(135deg, #0D5FB8 0%, #143F82 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(13, 95, 184, 0.30);
 }
 
-/* ============================================
-   RESPONSIVE — MOBILE
-   ============================================ */
-@media (max-width: 768px) {
-  .services-benefits-section {
-    padding: 100px 16px 60px;
+.sbs-arrow-icon {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.sbs-bottom-image {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 340px;
+  box-shadow: 0 16px 36px rgba(14, 34, 67, 0.14);
+}
+
+.sbs-image-overlay {
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 28px 36px;
+  background: linear-gradient(to top, rgba(16, 30, 138, 0.82) 0%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sbs-image-caption {
+  font-family: Heebo, Assistant, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: start;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.sbs-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
-  .services-benefits-section .sbs-header {
-    margin-bottom: 40px;
-  }
-
-  .services-benefits-section .sbs-main-title {
-    font-size: 26px;
-  }
-
-  .services-benefits-section .sbs-subtitle {
-    font-size: 16px;
-  }
-
-  .services-benefits-section .sbs-comparison-wrapper {
-    grid-template-columns: 1fr !important;
-    gap: 40px 0;
-  }
-
-  .services-benefits-section .sbs-divider-center {
-    flex-direction: row;
+.sbs-divider-arrow {
+    display: flex;
     padding-top: 0;
-    min-width: unset;
-    width: 100%;
+    justify-content: center;
   }
 
-  .services-benefits-section .sbs-divider-line {
-    flex: 1;
-    width: auto;
-    height: 1px;
-    min-height: unset;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.15), transparent);
+.sbs-arrow-wrap {
+    transform: rotate(-90deg);
   }
 
-  .services-benefits-section .sbs-divider-vs {
-    flex-shrink: 0;
+.services-benefits-section {
+    padding: 60px 16px 60px;
   }
 
-  .services-benefits-section .sbs-card {
+.sbs-main-title {
+    font-size: 24px;
+  }
+
+.sbs-subtitle {
+    font-size: 16px;
+  }
+
+.sbs-header {
+    margin-bottom: 36px;
+  }
+
+.sbs-card {
     grid-template-columns: 44px 1fr;
-    gap: 0 12px;
-    padding: 14px;
+    padding: 16px 14px;
   }
 
-  .services-benefits-section .sbs-card-icon {
+.sbs-card-icon {
     width: 40px;
     height: 40px;
   }
 
-  .services-benefits-section .sbs-card-content h3 {
-    font-size: 16px;
+.sbs-card-title {
+    font-size: 15px;
   }
 
-  .services-benefits-section .sbs-glow-1,
-  .services-benefits-section .sbs-glow-2 {
-    display: none;
+.sbs-bottom-image {
+    height: 220px;
   }
-}
+
+.sbs-image-overlay {
+    padding: 16px 18px;
+  }
+
+.sbs-image-caption {
+    font-size: 15px;
+  }
 </style>
     <link rel="stylesheet" href="/styles.css">
 
@@ -1632,196 +1565,130 @@
 
 
 <section class="services-benefits-section" data-layout-spec="שירותים-benefits" dir="rtl" data-zappy-section="true" id="zappy-section-2">
-
-  <!-- Background decorative elements -->
-  <div class="sbs-bg-grid" aria-hidden="true"></div>
-  <div class="sbs-bg-glow sbs-glow-1" aria-hidden="true"></div>
-  <div class="sbs-bg-glow sbs-glow-2" aria-hidden="true"></div>
-
   <div class="sbs-container">
 
     <!-- Section Header -->
     <div class="sbs-header">
-      <h2 class="sbs-main-title" >
-
-במקום להתרוצץ בין סוכנים - עוברים לניהול חכם תחת קורת גג אחת
-
-</h2>
+      <h2 class="sbs-main-title">במקום להתרוצץ בין סוכנים - עוברים לניהול חכם תחת קורת גג אחת</h2>
       <p class="sbs-subtitle">למה לעבוד איתי לכל הצרכים הפיננסיים שלך?</p>
     </div>
 
-    <!-- Two-column comparison layout -->
-    <div class="sbs-comparison-wrapper zappy-preserve-css-grid" style="--zappy-grid-cols: 1fr auto 1fr; display:grid; grid-template-columns:1fr auto 1fr; gap:0 32px; align-items: stretch !important; direction:rtl;" data-zappy-explicit-columns="true" data-zappy-grid-align="start" data-original-item-width="544" data-original-gap="0px 32px">
+    <!-- Two Columns: Problems vs Solutions -->
+    <div class="sbs-columns">
 
-      <!-- LEFT COLUMN: The Problem -->
-      <div class="sbs-column sbs-column-problem" data-grid-item-index="0">
+      <!-- Problems Column -->
+      <div class="sbs-column sbs-problems">
         <div class="sbs-column-label">
-          <span class="sbs-label-icon" aria-hidden="true">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-          </span>
-          <span>המציאות הפיננסית הנפוצה</span>
+          <span class="sbs-label-icon"><i class="fa fa-times-circle"></i></span>
+          <span class="sbs-label-text">המציאות הפיננסית הנפוצה</span>
         </div>
 
-        <div class="sbs-card sbs-card-problem">
+        <div class="sbs-card sbs-problem-card">
           <div class="sbs-card-icon sbs-icon-problem">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 ><font color="#ffffff">
-
-התרוצצות בין סוכנים שונים
-
-</font></h3>
-            <p ><font color="#ffffff">
-
-סוכן ביטוח אחד, מנהל תיקים שני ויועץ פנסיוני שלישי. אף אחד לא רואה את התמונה המלאה
-
-</font></p>
+            <h3 class="sbs-card-title">התרוצצות בין סוכנים שונים</h3>
+            <p class="sbs-card-text">סוכן ביטוח אחד, מנהל תיקים שני ויועץ פנסיוני שלישי. אף אחד לא רואה את התמונה המלאה</p>
           </div>
         </div>
 
-        <div class="sbs-card sbs-card-problem">
+        <div class="sbs-card sbs-problem-card">
           <div class="sbs-card-icon sbs-icon-problem">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 ><font color="#ffffff">החלטות שמתנגשות זו בזו</font></h3>
-            <p ><font color="#ffffff">כאשר אין תיאום בין תחומים שונים, ההחלטות שנעשות באחד עלולות לפגוע באחר. חיסכון פנסיוני לא מותאם לתיק ההשקעות, ופוליסת ביטוח שאינה משתלבת עם התכנון הכולל.</font></p>
+            <h3 class="sbs-card-title">החלטות שמתנגשות זו בזו</h3>
+            <p class="sbs-card-text">כאשר אין תיאום בין תחומים שונים, ההחלטות שנעשות באחד עלולות לפגוע באחר. חיסכון פנסיוני לא מותאם לתיק ההשקעות, ופוליסת ביטוח שאינה משתלבת עם התכנון הכולל.</p>
           </div>
         </div>
 
-        <div class="sbs-card sbs-card-problem">
+        <div class="sbs-card sbs-problem-card">
           <div class="sbs-card-icon sbs-icon-problem">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 ><font color="#ffffff">
-
-בלאגן בניירת וחוסר שליטה
-
-</font></h3>
-            <p ><font color="#ffffff">
-
-הררי דוחות, מושגים ב"סינית" ותחושה שאין לכם מושג מה באמת קורה עם הכסף שלכם.
-
-</font></p>
+            <h3 class="sbs-card-title">בלאגן בניירת וחוסר שליטה</h3>
+            <p class="sbs-card-text">הררי דוחות, מושגים ב"סינית" ותחושה שאין לכם מושג מה באמת קורה עם הכסף שלכם.</p>
           </div>
         </div>
 
-        <div class="sbs-card sbs-card-problem">
+        <div class="sbs-card sbs-problem-card">
           <div class="sbs-card-icon sbs-icon-problem">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.51"></path></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 ><font color="#ffffff">
-
-מתחילים הכל מחדש בכל שינוי
-
-</font></h3>
-            <p ><font color="#f7f7f5">
-
-בשינוי עבודה או בפרישה, אתם נאלצים להסביר את ההיסטוריה שלכם שוב ושוב לאנשים חדשים.
-
-</font></p>
+            <h3 class="sbs-card-title">מתחילים הכל מחדש בכל שינוי</h3>
+            <p class="sbs-card-text">בשינוי עבודה או בפרישה, אתם נאלצים להסביר את ההיסטוריה שלכם שוב ושוב לאנשים חדשים.</p>
           </div>
         </div>
       </div>
 
-      <!-- Center Divider -->
-      <div class="sbs-divider-center" aria-hidden="true">
-        <div class="sbs-divider-line"></div>
-        <div class="sbs-divider-vs">VS</div>
-        <div class="sbs-divider-line"></div>
+      <!-- Divider Arrow -->
+      <div class="sbs-divider-arrow">
+        <div class="sbs-arrow-wrap">
+          <i class="fa fa-arrow-left sbs-arrow-icon"></i>
+        </div>
       </div>
 
-      <!-- RIGHT COLUMN: The Solution -->
-      <div class="sbs-column sbs-column-solution" data-grid-item-index="2">
+      <!-- Solutions Column -->
+      <div class="sbs-column sbs-solutions">
         <div class="sbs-column-label">
-          <span class="sbs-label-icon" aria-hidden="true">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </span>
-          <span>הגישה של מוטי וינקלר</span>
+          <span class="sbs-label-icon"><i class="fa fa-check-circle"></i></span>
+          <span class="sbs-label-text">הגישה של מוטי וינקלר</span>
         </div>
 
-        <div class="sbs-card sbs-card-solution">
+        <div class="sbs-card sbs-solution-card">
           <div class="sbs-card-icon sbs-icon-solution">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 >
-
-אני רואה את התמונה המלאה
-
-</h3>
-            <p >
-
-א<font color="#ffffff">ני בונה אסטרטגיה אחת שבה הפנסיה, הביטוח וההשקעות עובדים בסנכרון מושלם
-
-</font></p>
+            <h3 class="sbs-card-title">אני רואה את התמונה המלאה</h3>
+            <p class="sbs-card-text">אני בונה אסטרטגיה אחת שבה הפנסיה, הביטוח וההשקעות עובדים בסנכרון מושלם</p>
           </div>
         </div>
 
-        <div class="sbs-card sbs-card-solution">
+        <div class="sbs-card sbs-solution-card">
           <div class="sbs-card-icon sbs-icon-solution">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 >
-
-תוכנית עבודה שמתאימה לכם
-
-</h3>
-            <p ><font color="#ffffff">
-
-הכל מיושר למטרות שלכם. אין סתירות, אין כפילויות ואין "חורים" בכיסוי הביטוחי.
-
-</font></p>
+            <h3 class="sbs-card-title">תוכנית עבודה שמתאימה לכם</h3>
+            <p class="sbs-card-text">הכל מיושר למטרות שלכם. אין סתירות, אין כפילויות ואין "חורים" בכיסוי הביטוחי.</p>
           </div>
         </div>
 
-        <div class="sbs-card sbs-card-solution">
+        <div class="sbs-card sbs-solution-card">
           <div class="sbs-card-icon sbs-icon-solution">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 >
-
-בהירות ושפה פשוטה
-
-</h3>
-            <p ><font color="#ffffff">
-
-אני עושה לכם סדר בבלאגן. תקבלו תמונת מצב ברורה, בעברית פשוטה, כדי שתוכלו לקבל החלטות בביטחו
-
-</font></p>
+            <h3 class="sbs-card-title">בהירות ושפה פשוטה</h3>
+            <p class="sbs-card-text">אני עושה לכם סדר בבלאגן. תקבלו תמונת מצב ברורה, בעברית פשוטה, כדי שתוכלו לקבל החלטות בביטחו</p>
           </div>
         </div>
 
-        <div class="sbs-card sbs-card-solution">
+        <div class="sbs-card sbs-solution-card">
           <div class="sbs-card-icon sbs-icon-solution">
-            <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
           </div>
           <div class="sbs-card-content">
-            <h3 >
-
-אני איתכם לטווח ארוך
-
-</h3>
-            <p ><font color="#ffffff">
-
-אני מכיר את ההיסטוריה שלכם ואת הצרכים המשתנים של המשפחה. אתם לא עוד מספר, אתם לקוחות לחיים
-
-</font></p>
+            <h3 class="sbs-card-title">אני איתכם לטווח ארוך</h3>
+            <p class="sbs-card-text">אני מכיר את ההיסטוריה שלכם ואת הצרכים המשתנים של המשפחה. אתם לא עוד מספר, אתם לקוחות לחיים</p>
           </div>
         </div>
       </div>
-
     </div>
-    <!-- /comparison wrapper -->
+
+    <!-- Bottom image -->
+    <div class="sbs-bottom-image">
+      <img data-placeholder="services-benefits-image-1" data-context="A professional financial advisor in a modern Israeli office, reviewing documents and charts with a client across a clean desk. Blue and white tones, trust and expertise, natural light, premium financial advisory setting." width="1100" height="340" src="" alt="מוטי וינקלר - יועץ פיננסי מקצועי עם לקוח" style="object-fit: cover; object-position: center;">
+      <div class="sbs-image-overlay">
+        <p class="sbs-image-caption">ניהול פיננסי אחד, תמונה שלמה, שקט נפשי לאורך שנים</p>
+      </div>
+    </div>
 
   </div>
-  <!-- /container -->
-
 </section><section class="services-process-section" data-layout-spec="שירותים-process" dir="rtl" id="zappy-section-3">
   <div class="services-process-container">
     <div class="services-process-header">
