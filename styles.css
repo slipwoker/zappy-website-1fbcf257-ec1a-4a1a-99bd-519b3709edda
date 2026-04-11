@@ -2838,10 +2838,9 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   background: linear-gradient(to left, transparent, var(--border-light) 30%, var(--border-light) 70%, transparent);
 }
 
-/* ── CTA ── */
 .index-services-section .index-services-cta {
   text-align: center;
-  margin-top: 64px;
+  margin-top: 24px;
 }
 
 .index-services-section .index-services-btn {
