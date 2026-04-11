@@ -8791,6 +8791,15 @@ html body nav.navbar.scrolled {
   border: none !important;
 }
 
+.site-footer .footer-brand > div,
+.site-footer .footer-brand > div *,
+.site-footer .footer-brand .logo,
+.site-footer .footer-brand img {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
