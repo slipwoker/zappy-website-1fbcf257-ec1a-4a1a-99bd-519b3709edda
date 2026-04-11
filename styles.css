@@ -8313,29 +8313,28 @@ html body nav.navbar.scrolled {
   }
 
   .services-benefits-section .sbs-header {
-  margin-bottom: 28px;
-}
+    margin-bottom: 40px;
+  }
 
   .services-benefits-section .sbs-main-title {
-  font-size: 22px;
-}
+    font-size: 26px;
+  }
 
   .services-benefits-section .sbs-subtitle {
-  font-size: 14px;
-}
+    font-size: 16px;
+  }
 
   .services-benefits-section .sbs-comparison-wrapper {
-  grid-template-columns: 1fr 1fr !important;
-  gap: 0 12px;
-}
+    grid-template-columns: 1fr !important;
+    gap: 40px 0;
+  }
 
   .services-benefits-section .sbs-divider-center {
-  flex-direction: row;
-  padding-top: 0;
-  min-width: unset;
-  width: 100%;
-  display: none;
-}
+    flex-direction: row;
+    padding-top: 0;
+    min-width: unset;
+    width: 100%;
+  }
 
   .services-benefits-section .sbs-divider-line {
     flex: 1;
@@ -8350,19 +8349,19 @@ html body nav.navbar.scrolled {
   }
 
   .services-benefits-section .sbs-card {
-  grid-template-columns: 1fr;
-  gap: 8px 0;
-  padding: 14px 12px;
-}
+    grid-template-columns: 44px 1fr;
+    gap: 0 12px;
+    padding: 14px;
+  }
 
   .services-benefits-section .sbs-card-icon {
-  width: 36px;
-  height: 36px;
-}
+    width: 40px;
+    height: 40px;
+  }
 
   .services-benefits-section .sbs-card-content h3 {
-  font-size: 13px;
-}
+    font-size: 16px;
+  }
 
   .services-benefits-section .sbs-glow-1,
   .services-benefits-section .sbs-glow-2 {
@@ -8799,100 +8798,6 @@ html body nav.navbar.scrolled {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
-}
-
-@media (max-width: 768px) {
-.services-benefits-section {
-  padding: 60px 16px 50px !important;
-}
-
-.services-benefits-section .sbs-header {
-  margin-bottom: 32px !important;
-}
-
-.services-benefits-section .sbs-main-title {
-  font-size: 22px !important;
-  line-height: 1.3 !important;
-}
-
-.services-benefits-section .sbs-subtitle {
-  font-size: 14px !important;
-}
-
-.services-benefits-section .sbs-comparison-wrapper {
-  grid-template-columns: 1fr !important;
-  gap: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-.services-benefits-section .sbs-divider-center {
-  display: none !important;
-}
-
-.services-benefits-section .sbs-column {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 8px !important;
-}
-
-.services-benefits-section .sbs-column-problem {
-  background: rgba(255,255,255,0.04);
-  border-radius: 12px;
-  padding: 16px 12px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.services-benefits-section .sbs-column-solution {
-  background: rgba(31,120,184,0.1);
-  border-radius: 12px;
-  padding: 16px 12px;
-  border: 1px solid rgba(31,120,184,0.25);
-}
-
-.services-benefits-section .sbs-column-label {
-  font-size: 12px !important;
-  padding: 8px 12px !important;
-  margin-bottom: 12px !important;
-  border-radius: 8px !important;
-  justify-content: center !important;
-}
-
-.services-benefits-section .sbs-card {
-  grid-template-columns: 36px 1fr !important;
-  gap: 0 10px !important;
-  padding: 12px 10px !important;
-  border-radius: 8px !important;
-  align-items: start !important;
-}
-
-.services-benefits-section .sbs-card-icon {
-  width: 32px !important;
-  height: 32px !important;
-  border-radius: 6px !important;
-  margin-top: 1px !important;
-  flex-shrink: 0 !important;
-}
-
-.services-benefits-section .sbs-card-icon svg {
-  width: 16px !important;
-  height: 16px !important;
-}
-
-.services-benefits-section .sbs-card-content {
-  gap: 3px !important;
-}
-
-.services-benefits-section .sbs-card-content h3 {
-  font-size: 13px !important;
-  line-height: 1.3 !important;
-}
-
-.services-benefits-section .sbs-card-content p {
-  font-size: 11.5px !important;
-  line-height: 1.55 !important;
-}
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
