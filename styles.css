@@ -9001,6 +9001,14 @@ nav.navbar .sub-menu li a {
 }
 }
 
+@media (max-width: 768px) {
+.index-hero-section .index-hero-btn-secondary {
+  background: rgb(13, 95, 184) !important;
+  border-color: rgb(13, 95, 184) !important;
+  color: #ffffff !important;
+}
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
