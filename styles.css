@@ -9065,6 +9065,10 @@ nav.navbar .sub-menu li a {
   box-sizing: border-box !important;
 }
 
+.navbar .nav-login-btn.nav-cta-btn {
+  font-size: 15px !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
