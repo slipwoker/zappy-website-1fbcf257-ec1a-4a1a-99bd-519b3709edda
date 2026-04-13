@@ -9047,6 +9047,24 @@ nav.navbar .sub-menu li a {
 }
 }
 
+.navbar .nav-login-btn.nav-cta-btn {
+  height: 31px !important;
+  max-height: 31px !important;
+  line-height: 31px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.navbar .nav-cta-btn:not(.nav-login-btn) {
+  height: 31px !important;
+  max-height: 31px !important;
+  line-height: 31px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  box-sizing: border-box !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
