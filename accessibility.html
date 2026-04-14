@@ -372,8 +372,6 @@
     </svg>
   </button>
 
-  <a href="https://portal.roeto.co.il/vinkler/login" target="_blank" rel="noopener noreferrer" class="mobile-login-btn" >כניסה לאזור האישי</a>
-
   <button class="phone-header-btn" data-phone="0506700030" aria-label="Call"  data-element-type="button" data-element-id="btn-1776079570608-7irkcdoif" data-native-element="true">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: rgb(0, 0, 0); width: 24px; height: 24px;">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="#000000"></path>
@@ -694,10 +692,11 @@
             var effPos=mobilePos||'50% 50%';
             w.style.setProperty('overflow','hidden','important');
             w.style.setProperty('position','relative','important');
+            w.style.setProperty('width','100%','important');
+            w.style.setProperty('max-width','100%','important');
             var _sW=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-width'))||0;
             var _sH=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-height'))||0;
-            var _vW=window.innerWidth||document.documentElement.clientWidth||375;
-            if(_sW>0&&_sW>_vW){var _cW=Math.min(_sW,_vW-40);w.style.setProperty('width',_cW+'px','important');if(_sH>0)w.style.setProperty('height',Math.round(_sH*(_cW/_sW))+'px','important');}
+            if(_sW>0&&_sH>0){w.style.setProperty('aspect-ratio',_sW+'/'+_sH,'important');w.style.setProperty('height','auto','important');}
             function _applyZoomCrop(_img,_w,_ePos,_eZoom){
               var rect=_w.getBoundingClientRect();
               if(!rect||!rect.width||!rect.height)return;
