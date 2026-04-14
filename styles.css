@@ -9069,6 +9069,96 @@ nav.navbar .sub-menu li a {
   font-size: 15px !important;
 }
 
+@media (max-width: 768px) {
+.nav-cta-container:not(:has(.lang-switcher)) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1000 !important;
+}
+
+.nav-cta-container .zappy-search-container,
+  .nav-cta-container .zappy-search-trigger {
+  display: none !important;
+}
+
+.nav-cta-container p.zappy-editable {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.nav-cta-container .nav-cta-btn:not(.nav-login-btn) {
+  display: none !important;
+}
+
+.nav-cta-container .nav-login-btn {
+  display: inline-block !important;
+  font-size: 13px !important;
+  padding: 7px 14px !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+}
+}
+
+@media (max-width: 768px) {
+.nav-cta-container:not(:has(.lang-switcher)) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: auto !important;
+  flex: 1 !important;
+}
+
+.nav-cta-container .zappy-search-container,
+  .nav-cta-container .zappy-search-trigger {
+  display: none !important;
+}
+
+.nav-cta-container p.zappy-editable {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.nav-cta-container .nav-cta-btn:not(.nav-login-btn) {
+  display: none !important;
+}
+
+.nav-cta-container .nav-login-btn {
+  display: inline-block !important;
+  font-size: 12px !important;
+  padding: 6px 12px !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  margin-right: 0 !important;
+}
+
+.nav-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.nav-right-group {
+  display: none !important;
+}
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
@@ -9379,7 +9469,8 @@ nav .sub-menu.zappy-empty-submenu,
   }
   
   /* Fix zoom wrapper images on mobile - make responsive */
-  [data-zappy-zoom-wrapper="true"] img {
+  /* Exclude images with mobile overrides — those are handled by JS to honor user settings */
+  [data-zappy-zoom-wrapper="true"] img:not([data-zappy-mobile-object-position]):not([data-zappy-mobile-zoom]) {
     position: relative !important;
     width: 100% !important;
     height: auto !important;
@@ -9686,6 +9777,9 @@ section[data-hero-type] {
 
 /* ========== END GRID RESPONSIVE FIX ========== */
 
+/* Footer contact alignment fix */
+.footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
+
 
 /* ZAPPY_CONTACT_FORM_LAYOUT_FIX */
 form.contact-form, .contact-form { flex-direction: column !important; align-items: stretch !important; }
@@ -9703,6 +9797,3 @@ form.contact-form .contact-input, form.contact-form .contact-textarea { width: 1
 [data-zappy-bg-type="color"] { background-image: none !important; background-color: var(--zappy-bg-color, transparent) !important; }
 [data-zappy-bg-type="image"] { background-image: linear-gradient(var(--zappy-bg-overlay, rgba(0,0,0,0)), var(--zappy-bg-overlay, rgba(0,0,0,0))), var(--zappy-bg-image, none) !important; background-size: cover !important; background-position: center !important; background-repeat: no-repeat !important; }
 [data-zappy-bg-type="video"] { background-image: none !important; }
-
-/* Footer contact alignment fix */
-.footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
