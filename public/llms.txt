@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# מוטי וינקלר — Generative Engine Optimization Map
+
+> Moti Winkler is a seasoned financial expert with over 20 years of experience in capital markets, specializing in investments, insurance, and pension planning. He offers deep professional expertise and a trusted advisory approach to help clients navigate complex financial decisions. The brand conveys authority, reliability, and long-term financial security.
 
 ---
 
@@ -42,12 +44,50 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: motti@vinkler-fin.co.il
+- Phone: 050-6700030
+- Phone (tel): tel:0506700030
+- Address: גזית 7, פתח תקווה
+
+### Contact form
+- URL: https://vinkler-fin.co.il/contact
+- Endpoint: https://vinkler-fin.co.il/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://vinkler-fin.co.il/sitemap.xml
-- **Robots.txt**: https://vinkler-fin.co.il/robots.txt
+## About מוטי וינקלר
+Moti Winkler is a seasoned financial expert with over 20 years of experience in capital markets, specializing in investments, insurance, and pension planning. He offers deep professional expertise and a trusted advisory approach to help clients navigate complex financial decisions. The brand conveys authority, reliability, and long-term financial security.
+
+## Services/Products
+- השקעות
+- ביטוח
+- פנסיה
+- שוק ההון
+
+## Target Audience
+- משפחות צעירות בתכנון פיננסי
+- גמלאים המחפשים ביטוח
+- מנהלים בכירים בחברות
+
+## Industry
+פיננסים, השקעות, ביטוח, פנסיה
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://vinkler-fin.co.il/sitemap.xml
+- Robots: https://vinkler-fin.co.il/robots.txt
+- Flattened page text (for LLMs): https://vinkler-fin.co.il/llms-full.txt
